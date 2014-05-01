@@ -6,7 +6,7 @@ MMPM/2 toolkit for EMX.
 
 LICENSE
 ===============
-* N/A
+* GNU GPL V2
 
 COMPILE TOOLS
 ===============
