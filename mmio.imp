@@ -1,0 +1,117 @@
+;-----------------------------------------------------
+; mmio.imp -- import list file to interface mmio.dll
+;
+; using emx 0.8h
+; data gathered with exemap
+;
+;
+; Marc E.E. van Woerkom, 2/94
+;
+
+mmiohlpCleanupInstance         mmio    2  ?
+mmiohlpListCreate              mmio    3  ?
+mmiohlpListAdd                 mmio    4  ?
+mmiohlpListGet                 mmio    5  ?
+mmiohlpListFind                mmio    6  ?
+mmiohlpListInsert              mmio    7  ?
+mmiohlpListChange              mmio    8  ?
+mmiohlpListDelete              mmio    9  ?
+mmiohlpListGetHeader           mmio   10  ?
+mmiohlpConvertAddressToHmmio   mmio   11  ?
+mmiohlpConvertHmmioToAddress   mmio   12  ?
+mmiohlpFreeHmmioEntry          mmio   13  ?
+mmiohlpGrowHmmioTable          mmio   14  ?
+mmiohlpGenerateHmmio           mmio   15  ?
+mmiohlpAcquireMmioSem          mmio   16  ?
+mmiohlpDiscardMmioSem          mmio   17  ?
+mmiohlpReadIniFile             mmio   18  ?
+mmiohlpLoadDefIOProcs          mmio   19  ?
+mmiohlpUnloadDefIOProcs        mmio   20  ?
+mmiohlpRestoreInfoState        mmio   21  ?
+mmiohlpAllocateInternalBuffer  mmio   22  ?
+mmiohlpExpandMemFile           mmio   23  ?
+mmioStringToFOURCC             mmio   24  ?
+mmioGetLastError               mmio   25  ?
+mmioInstallIOProc              mmio   26  ?
+mmioOpen                       mmio   27  ?
+mmioRead                       mmio   28  ?
+mmioWrite                      mmio   29  ?
+mmioSeek                       mmio   30  ?
+mmioFlush                      mmio   31  ?
+mmioClose                      mmio   32  ?
+DOSIOProc                      mmio   33  ?
+MEMIOProc                      mmio   34  ?
+BNDIOProc                      mmio   35  ?
+mmioAscend                     mmio   36  ?
+mmioDescend                    mmio   37  ?
+mmioCreateChunk                mmio   38  ?
+mmioGetInfo                    mmio   39  ?
+mmioSetInfo                    mmio   40  ?
+mmioSendMessage                mmio   41  ?
+mmioAdvance                    mmio   42  ?
+mmioSetBuffer                  mmio   43  ?
+mmioCFOpen                     mmio   44  ?
+mmioCFClose                    mmio   45  ?
+mmioCFAddEntry                 mmio   46  ?
+mmioCFDeleteEntry              mmio   47  ?
+mmioCFChangeEntry              mmio   48  ?
+mmioCFFindEntry                mmio   49  ?
+mmioCFAddElement               mmio   50  ?
+mmioCFGetInfo                  mmio   51  ?
+mmioCFSetInfo                  mmio   52  ?
+mmioCFCopy                     mmio   53  ?
+mmiohlpBuildCtoc               mmio   54  ?
+mmiohlpCreateCtoc              mmio   55  ?
+mmiohlpRewriteCtoc             mmio   56  ?
+mmiohlpGetHeaderInfo           mmio   57  ?
+mmiohlpUpdateCtocHeader        mmio   58  ?
+mmiohlpChangeCtocHeader        mmio   59  ?
+mmiohlpGetRemainingSize        mmio   60  ?
+mmiohlpFindOpenCtoc            mmio   61  ?
+mmiohlpGetFullPathName         mmio   62  ?
+mmiohlpAddCtocInstance         mmio   63  ?
+mmiohlpRemoveCtocInstance      mmio   64  ?
+mmiohlpLastModTime             mmio   65  ?
+mmiohlpOpenTempElement         mmio   66  ?
+mmiohlpCloseTempElement        mmio   67  ?
+mmiohlpTempName                mmio   68  ?
+mmiohlpRemoveSharingEntry      mmio   69  ?
+mmiohlpAddSharingEntry         mmio   70  ?
+mmiohlpCheckSharingMode        mmio   71  ?
+mmiohlpCheckHmmcfSharingMode   mmio   72  ?
+mmiohlpListTransferNode        mmio   73  ?
+mmioQueryFormatCount           mmio   74  ?
+mmioGetFormats                 mmio   75  ?
+mmioQueryHeaderLength          mmio   76  ?
+mmioGetHeader                  mmio   77  ?
+mmioSetHeader                  mmio   78  ?
+mmioIdentifyFile               mmio   79  ?
+mmioGetFormatName              mmio   80  ?
+mmiohlpGetFormatStringLength   mmio   81  ?
+mmiohlpGetFormatString         mmio   82  ?
+mmiohlpGetNLSData              mmio   83  ?
+CFIOProc                       mmio   84  ?
+mmioIniFileHandler             mmio   85  ?
+mmioIdentifyFileFormat         mmio   86  ?
+mmioIdentifyStorageSystem      mmio   87  ?
+mmioDetermineSSIOProc          mmio   88  ?
+mmioDetermineFFIOProc          mmio   89  ?
+mmioDetermineLastIOProc        mmio   90  ?
+mmiohlpIsFccSS                 mmio   91  ?
+mmiohlpIsFccFF                 mmio   92  ?
+mmioQueryIOProcModuleHandle    mmio   93  ?
+mmiohlpGetElementStart         mmio   94  ?
+mmiohlpChangeSharingEntry      mmio   95  ?
+mmiohlpLoadNextIOProc          mmio   96  ?
+mmiohlpLoadIOProc              mmio   97  ?
+mmioMigrateIniFile             mmio   98  ?
+mmioIniFileCODEC               mmio   99  ?
+mmioCFCompact                  mmio  100  ?
+mmioSet                        mmio  101  ?
+mmioQueryCODECName             mmio  102  ?
+mmiohlpCFName                  mmio  103  ?
+mmioLoadCODECProc              mmio  104  ?
+mmioQueryCODECNameLength       mmio  105  ?
+mmioGetData                    mmio  106  ?
+
+

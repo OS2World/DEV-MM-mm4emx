@@ -1,0 +1,208 @@
+#
+# test.mci -- test the sign o' the times rhythm
+#
+#
+# use this with mci.exe from the mci sample
+#
+open waveaudio alias wav wait
+# 0:00.60 - 0:07.80
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+# 1:
+# A 10
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m3.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+# B 10
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+# 2:
+# A 10
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+# B 10
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+# 3:
+# A 10
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+# C 10
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+# 4:
+# A 6
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+# B 6
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+load wav m1.wav wait
+play wav wait
+# 5:
+# A 6
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+load wav m4.wav wait
+play wav wait
+load wav m5.wav wait
+play wav wait
+# C 10
+load wav m2.wav wait
+play wav wait
+load wav s1.wav wait
+play wav wait
+load wav p1.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+load wav m2.wav wait
+play wav wait
+# the end
+close wav wait
+

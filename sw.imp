@@ -1,0 +1,71 @@
+;-------------------------------------------------
+; sw.imp -- import list file to interface sw.dll
+;
+; using emx 0.8h
+; data gathered with exemap
+;
+;
+; Marc E.E. van Woerkom, 2/94
+;
+
+WinSecondaryWindow         sw   1  ?
+WinLoadSecondaryWindow     sw   2  ?
+WinProcessSecondaryWindow  sw   3  ?
+WinCreateSecondaryWindow   sw   4  ?
+WinSecondaryMessageBox     sw   5  ?
+WinDismissSecondaryWindow  sw   6  ?
+WinDestroySecondaryWindow  sw   7  ?
+WinDefSecondaryWindowProc  sw   8  ?
+WinQuerySecondaryFrame     sw   9  ?
+WinQuerySecondaryDialog    sw  10  ?
+WinDefaultSize             sw  11  ?
+WinInsertDefaultSize       sw  12  ?
+WinRegisterCircularSlider  sw  13  ?
+WinRegisterGraphicButton   sw  14  ?
+GraphicBtnProc             sw  15  ?
+HhpCreateHeap              sw  16  ?
+HhpIAllocMem               sw  17  ?
+HhpFreeMem                 sw  18  ?
+HhpDestroyHeap             sw  19  ?
+HhpAccessHeap              sw  20  ?
+HhpReleaseHeap             sw  21  ?
+HhpGetPID                  sw  22  ?
+HhpAllocBuffer             sw  23  ?
+HhpFreeBuffer              sw  24  ?
+HhpAccessBuffer            sw  25  ?
+HptrFromICO                sw  26  ?
+stripblanks                sw  27  ?
+SWstrlen                   sw  28  ?
+SWstrchr                   sw  29  ?
+SWstrrchr                  sw  30  ?
+SWstrcpy                   sw  31  ?
+SWmemcpy                   sw  32  ?
+SWmemset                   sw  33  ?
+SWstrcat                   sw  34  ?
+SWstrcmp                   sw  35  ?
+isdbcs                     sw  36  ?
+nextpch                    sw  37  ?
+prevpch                    sw  38  ?
+SWstrcmpi                  sw  39  ?
+SWstrnicmp                 sw  40  ?
+SWstrncat_trunc            sw  41  ?
+SWstrncat                  sw  42  ?
+SWstrncpy_trunc            sw  43  ?
+SWstrncpy                  sw  44  ?
+SWstrstr                   sw  45  ?
+SWstrupr                   sw  46  ?
+xlatblank                  sw  47  ?
+SWstrncmp                  sw  48  ?
+SWstrpbrk                  sw  49  ?
+FsInitDriveData            sw  50  ?
+FsQueryDriveData           sw  51  ?
+WinQuerySecondaryHWND      sw  52  ?
+WinQueryDefaultSize        sw  53  ?
+SWstrstri                  sw  54  ?
+DBCS_splitpath             sw  55  ?
+DBCSGenerateUniqueFile     sw  56  ?
+WinSWAssocResModule        sw  57  ?
+HhpTAllocMem               sw  58  ?
+SWstrspn                   sw  59  ?
+
+

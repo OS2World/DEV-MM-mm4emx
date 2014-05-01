@@ -1,0 +1,15 @@
+
+mm4emx 1.0 -- Multimedia for emx, [MvW] 2/94
+--------------------------------------------
+
+Please use one of these targets:
+
+    all     =  to built the library
+    inst    =  to install this package
+    deinst  =  to deinstall this package
+    clean   =  to clean up this directory
+    dist    =  to create a distribution
+
+Usage: dmake target [-n to surpress executing]
+
+

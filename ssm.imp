@@ -1,0 +1,32 @@
+;---------------------------------------------------
+; ssm.imp -- import list file to interface ssm.dll
+;
+; using emx 0.8h
+; data gathered with exemap
+;
+;
+; Marc E.E. van Woerkom, 2/94
+;
+
+SMHEntryPoint           ssm   1  ?
+SpiCreateStream         ssm   2  ?
+SpiGetHandler           ssm   3  ?
+SpiStartStream          ssm   4  ?
+SpiAssociate            ssm   5  ?
+SpiDestroyStream        ssm   6  ?
+SpiSeekStream           ssm   7  ?
+SpiStopStream           ssm   8  ?
+SpiEnableEvent          ssm   9  ?
+SpiDisableEvent         ssm  10  ?
+SpiEnableSync           ssm  11  ?
+SpiDisableSync          ssm  12  ?
+SpiInstallProtocol      ssm  13  ?
+SpiGetProtocol          ssm  14  ?
+SpiGetTime              ssm  15  ?
+SpiEnumerateHandlers    ssm  16  ?
+SpiEnumerateProtocols   ssm  17  ?
+SpiSendMsg              ssm  18  ?
+SpiDetermineSyncMaster  ssm  19  ?
+SpiDebug                ssm  20  ?
+
+

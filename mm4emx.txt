@@ -1,0 +1,206 @@
+mm4emx 1.1 inset:
+
+     I have added a few addition constants and structures to support 
+the DART subsystem. For an example of using DART look at the file 
+dart_a.c in the source code of TiMidity for OS/2 available at 
+http://www.autobahn.mb.ca/~doconnor/timidity.html If you have any 
+problems please let me know.
+
+Darwin O'Connor <doconnor@autobahn.mb.ca>
+June 3, 1997
+
+ --============--
+    mm4emx 1.0
+ --============--
+
+
+Welcome to Multimedia for emx 1.0!
+----------------------------------
+
+This package enables you to use the OS/2 Multimedia Presentation Manager/2
+(MMPM/2) API from the emx development environment.
+
+It provides import libraries and header files to link your emx applications
+against the MMPM/2 DLLs.
+
+Also some sample programms are provided.
+
+
+The mm4emx10.zip archive contains:
+----------------------------------
+
+    samples/      samples directory
+    makefile      makefile for use with dmake
+    os2me.a       multimedia extensions import library (UNIX style)
+    mm4emx.doc    the file you're just reading :-)
+   *codec.h       multimedia header (coding/decoding)
+   *mciapi.h      multimedia header (multimedia control interface)
+   *mcios2.h      multimedia header (multimedia control interface)
+   *meerror.h     multimedia header (error definitions)
+   *mmdrvos2.h    multimedia header (multimedia drivers)
+   *mmioos2.h     multimedia header (multimedia I/O)
+   *os2me.h       multimedia header (main header)
+   *os2medef.h    multimedia header (misc. definitions)
+   *ssm.h         multimedia header (synchronization and streaming)
+   *sw.h          multimedia header (secondary windows PM extensions)
+    mciapi.imp    import list file (mciapi.dll)
+    mdm.imp       import list file (mdm.dll)
+    mmio.imp      import list file (mmio.imp)
+    ssm.imp       import list file (ssm.imp)
+    sw.imp        import list file (sw.imp)
+   *os2me.lib     multimedia extensions import library (OS/2 OMF style)
+    makefile.use  makefile usage info
+
+An asterisk (*) indicates a necessary file
+
+
+How to install this package:
+----------------------------
+
+The easiest way to install it is to use the fine dmake 3.8 make utility
+(ported to OS/2 by Kai Uwe Rommel). Type
+
+    dmake
+
+to get some hints. And type
+
+    dmake inst
+
+to install the libraries and header files into the emx directory tree.
+The makefile allows easy reconfiguration if you want to change the path from
+c:\emx to some other location.
+
+Please note that nmake won't digest this makefile. (Sorry, folks :-)
+
+
+Old vs. new:
+------------
+
+I decided to drop the 16-bit ballast, supporting only the 32-bit API,
+and to use only the new, OS/2 conforming MMPM/2 naming conventions.
+
+So you have to 
+
+    #define INCL_OS2MM 
+
+before including the os2me.h header file.
+
+
+Does it work?
+-------------
+
+I cannot (and won't) guarantee the functionality of the mm4emx package, but
+the parts I've tested so far, seem to work pretty good.
+
+If you spot an error please send me e-mail (please nothing bigger than 16kb)!
+
+For testing I used commands like these:
+
+    set include = c:\emx\include.cpp;c:\emx\include
+
+    rc -r terzet.rc
+    gcc -o terzet.exe terzet.c terzet.def terzet.res -Zomf -Zsys -los2me -s
+
+
+About the Samples:
+------------------
+
+1. mci        This program should help to understand the textual media
+              control interface. (mciSendString API)
+              You can put MCI string commands into a file and execute these
+              MCI scripts through mci.exe.
+              Several script samples (*.mci) are provided.
+
+2. cdtoc      This program demonstrates the use of the procedural media
+              control interface. (mciSendCommand API)
+              It displays the Table of Contents (TOC) of an audio CD.
+
+3. mmpmvals   The MMPM/2 system values are queried by this programm.
+              (mciQuerySysValue API)
+
+4. mmiofmts   Demonstration of the multimedia I/O (MMIO) API.
+              This utility displays all currently registered MMIO procedures.
+
+5. rhythm     A great rhythm implemented with playlists.
+              (Don't overlook test.mci - for a comparision! :-)
+
+
+Note: I intend to describe these examples in detail in one of the upcoming
+      EDM/2 issues (about March/April '94).
+
+
+Things left to do:
+------------------
+
+  o Counting arguments :-)
+
+    The import list files (*.imp) lack argument counts.
+    However, this seems to matter only if you want to use method (I1).
+    Please confer the emx documentation (e.g. emxdev.inf) for more details.
+
+  o More examples and testing (e.g. the PM extensions deserve some examples)
+
+
+On MMPM/2 programming:
+----------------------
+
+Perhaps you noticed already that there is no MMPM/2 programming introduction
+in this package, nor a API description useful enough for serious programming.
+
+This is intended! :-)
+
+IBM does a very good information politics concerning OS/2 2.x programming.
+They provide the technical manuals on paper or in electronic form for low
+charges. (You don't even get the manuals xeroxed for the same price :-)
+So please use this offer.
+
+Look for these manuals:
+
+    MMPM/2 Programming Guide, IBM Doc. S41G-2919
+    MMPM/2 Programming Reference, IBM Doc. S41G-2920
+
+The MMPM/2 reference is contained in .inf format in the MMPM/2 Toolkit, which
+itself is now part of version 2.1 of the Developer's Toolkit.
+The package also contains important tools like the IPF and SOM compilers,
+dialog and font editors and is rich of programming examples.
+
+Another source of the MMPM/2 manuals is the
+
+    IBM OS/2 Online Book Collection CD-ROM, IBM Doc. S53G-2166
+
+
+Last not least, I recommend the EDM/2 to you, i.e. the Electronic OS/2
+Developers Magazine.
+
+This monthly periodical on OS/2 programming is published in .inf format and
+can be obtained from
+
+    ftp.cdrom.com  (in /pub/os2/2_x/program/newsltr)
+
+or from better sorted BBS's.
+
+If you have an article or questions about EDM/2, please contact the editor:
+
+    Larry Salomon, Jr. (os2man@panix.com)
+
+You'll find introductions on MMPM/2 programming e.g. in the January '94 issue
+of the EDM/2 (edmi2-1a.zip).
+
+
+Special thanks to:
+------------------
+
+John J. McDonough (YCWP92A@prodigy.com) for pointing out to me the way how
+to attack mdm.dll and providing examples, inspiring me to do this package.
+
+
+Enjoy!
+
+
+    Marc E.E. van Woerkom    (Usenet: marc_van-woerkom@ac3.maus.de)
+
+
+----------------------------------------------------------------------------
+Copyright note: This package is free but copyrighted. (Like the GNU stuff)
+
+

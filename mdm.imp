@@ -1,0 +1,25 @@
+;---------------------------------------------------
+; mdm.imp -- import list file to interface mdm.dll
+;
+; using emx 0.8h
+; data gathered with exemap
+;
+;
+; Marc E.E. van Woerkom, 2/94
+;
+
+mciSendCommand              mdm   1  5
+mciSendString               mdm   2  5
+mciGetErrorString           mdm   3  3
+mciQueryDefaultConnections  mdm   6  ?
+mciDefaultConnection        mdm   7  ?
+mciQueryConnections         mdm   8  ?
+mciConnection               mdm   9  ?
+mciSetSysValue              mdm  10  2
+mciQuerySysValue            mdm  11  2
+mciMakeGroup                mdm  12  ?
+mciDeleteGroup              mdm  13  ?
+mciGetDeviceID              mdm  16  1
+mdmDriverNotify             mdm  17  ?
+
+

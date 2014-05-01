@@ -1,0 +1,27 @@
+;---------------------------------------------------------
+; mciapi.imp -- import list file to interface mciapi.dll
+;
+; using emx 0.8h
+; data gathered with exemap
+;
+;
+; Marc E.E. van Woerkom, 2/94
+;
+
+mciRxSendString       mciapi   2  ?
+mciRxGetErrorString   mciapi   3  ?
+mciRxGetDeviceID      mciapi   4  ?
+mciRxInit             mciapi   5  ?
+mciRxExit             mciapi   6  ?
+mciPlayFile           mciapi  10  ?
+mciPlayResource       mciapi  11  ?
+mciRecordAudioFile    mciapi  12  ?
+mmioRemoveElement     mciapi  16  ?
+mmioFindElement       mciapi  18  ?
+MCI32PLAYFILE         mciapi  20  ?
+MCI32PLAYRESOURCE     mciapi  21  ?
+MCI32RECORDAUDIOFILE  mciapi  22  ?
+MMIO32REMOVEELEMENT   mciapi  23  ?
+MMIO32FINDELEMENT     mciapi  24  ?
+
+
